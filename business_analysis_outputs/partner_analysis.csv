@@ -1,0 +1,10 @@
+delivery_partner,total_deliveries,delayed_deliveries,delay_rate_pct,avg_rating
+delhivery,2786,691,24.8,3.69
+fedex,2818,709,25.16,3.7
+dhl,2802,738,26.34,3.69
+ecom express,2722,725,26.63,3.67
+blue dart,2798,754,26.95,3.68
+amazon logistics,2711,738,27.22,3.64
+shadowfax,2736,747,27.3,3.66
+ekart,2801,768,27.42,3.66
+xpressbees,2826,799,28.27,3.61

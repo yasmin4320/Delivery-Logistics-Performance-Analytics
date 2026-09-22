@@ -1,0 +1,200 @@
+{
+  "overall": {
+    "metric": "Overall delay rate: 26.68%",
+    "context": "25,000 total deliveries",
+    "interpretation": "Approximately 1 in every 4 deliveries is recorded as delayed in this dataset.  This baseline is the reference point for all group-level comparisons below."
+  },
+  "delivery_mode": {
+    "metric": "Delay rates by mode range from 0.0% (standard) to 73.78% (express) — a spread of 73.78 pp.",
+    "groups_compared": [
+      {
+        "delivery_mode": "express",
+        "delay_rate_pct": 73.78
+      },
+      {
+        "delivery_mode": "same day",
+        "delay_rate_pct": 32.54
+      },
+      {
+        "delivery_mode": "standard",
+        "delay_rate_pct": 0.0
+      },
+      {
+        "delivery_mode": "two day",
+        "delay_rate_pct": 0.43
+      }
+    ],
+    "interpretation": "There is a notable spread in observed delay rates across delivery modes. This is an association in the data; we cannot conclude that the delivery mode itself causes delays, as mode is likely correlated with distance, package type, or other factors not controlled for here.",
+    "caution": "Correlation, not causation."
+  },
+  "weather": {
+    "metric": "Delay rates by weather range from 16.02% (cold) to 41.45% (stormy) — a spread of 25.43 pp.",
+    "groups_compared": [
+      {
+        "weather_condition": "clear",
+        "delay_rate_pct": 17.43
+      },
+      {
+        "weather_condition": "cold",
+        "delay_rate_pct": 16.02
+      },
+      {
+        "weather_condition": "foggy",
+        "delay_rate_pct": 30.32
+      },
+      {
+        "weather_condition": "hot",
+        "delay_rate_pct": 17.12
+      },
+      {
+        "weather_condition": "rainy",
+        "delay_rate_pct": 37.35
+      },
+      {
+        "weather_condition": "stormy",
+        "delay_rate_pct": 41.45
+      }
+    ],
+    "interpretation": "Certain weather conditions are associated with higher delay rates in this dataset. In real-world logistics adverse weather can plausibly affect transit times; however, this is synthetic data, so the relationship reflects the data generation process rather than operational reality.",
+    "caution": "Association observed in synthetic data; no causal inference."
+  },
+  "distance": {
+    "metric": "Avg delivery cost rises from ₹264 (0–60 km) to ₹1,463 (241–300 km).",
+    "groups_compared": [
+      {
+        "distance_group": "0–60 km",
+        "delivery_count": 4920,
+        "delay_rate_pct": 17.36,
+        "avg_delivery_time": 3.42,
+        "avg_delivery_cost": 264.36
+      },
+      {
+        "distance_group": "61–120 km",
+        "delivery_count": 5044,
+        "delay_rate_pct": 19.85,
+        "avg_delivery_time": 4.74,
+        "avg_delivery_cost": 560.62
+      },
+      {
+        "distance_group": "121–180 km",
+        "delivery_count": 5053,
+        "delay_rate_pct": 26.04,
+        "avg_delivery_time": 6.29,
+        "avg_delivery_cost": 866.35
+      },
+      {
+        "distance_group": "181–240 km",
+        "delivery_count": 4960,
+        "delay_rate_pct": 31.75,
+        "avg_delivery_time": 7.69,
+        "avg_delivery_cost": 1162.78
+      },
+      {
+        "distance_group": "241–300 km",
+        "delivery_count": 5023,
+        "delay_rate_pct": 38.28,
+        "avg_delivery_time": 9.25,
+        "avg_delivery_cost": 1463.31
+      }
+    ],
+    "interpretation": "Delivery cost shows a clear positive association with distance group in this dataset. Delivery time also increases with distance.  Delay rate variation across distance bands is an observed pattern; distance alone may not explain delays without controlling for other variables.",
+    "caution": "Association, not causation."
+  },
+  "customer_experience": {
+    "metric": "Pearson r (delivery time vs rating) = -0.2693",
+    "groups_compared": [
+      {
+        "delivery_rating": 1,
+        "avg_delivery_time": 8.13
+      },
+      {
+        "delivery_rating": 2,
+        "avg_delivery_time": 8.11
+      },
+      {
+        "delivery_rating": 3,
+        "avg_delivery_time": 6.53
+      },
+      {
+        "delivery_rating": 4,
+        "avg_delivery_time": 5.64
+      },
+      {
+        "delivery_rating": 5,
+        "avg_delivery_time": 5.69
+      }
+    ],
+    "interpretation": "The Pearson correlation between delivery time and rating is -0.269, indicating a weak negative association — longer delivery times tend to correspond to slightly lower ratings in this dataset.  This is a statistical association; other factors (cost, package condition, communication) also influence customer satisfaction and are not captured here.",
+    "caution": "Weak correlation; no causal claim."
+  },
+  "partner": {
+    "metric": "Partner delay rates span a range of 3.47 percentage points (24.8% – 28.27%).",
+    "groups_compared": [
+      {
+        "delivery_partner": "delhivery",
+        "delay_rate_pct": 24.8
+      },
+      {
+        "delivery_partner": "fedex",
+        "delay_rate_pct": 25.16
+      },
+      {
+        "delivery_partner": "dhl",
+        "delay_rate_pct": 26.34
+      },
+      {
+        "delivery_partner": "ecom express",
+        "delay_rate_pct": 26.63
+      },
+      {
+        "delivery_partner": "blue dart",
+        "delay_rate_pct": 26.95
+      },
+      {
+        "delivery_partner": "amazon logistics",
+        "delay_rate_pct": 27.22
+      },
+      {
+        "delivery_partner": "shadowfax",
+        "delay_rate_pct": 27.3
+      },
+      {
+        "delivery_partner": "ekart",
+        "delay_rate_pct": 27.42
+      },
+      {
+        "delivery_partner": "xpressbees",
+        "delay_rate_pct": 28.27
+      }
+    ],
+    "interpretation": "There is meaningful variation in delay rates across delivery partners in this dataset. The range of 3.47 pp represents the gap between the highest- and lowest-rate partners. Because partners may operate in different regions, carry different package types, or serve different delivery modes, the observed difference is a descriptive pattern, not an isolated measure of each partner's performance.",
+    "caution": "Confounding variables (region, mode, package type) are not controlled for. Do not interpret rate differences as a direct ranking of operational quality."
+  },
+  "region": {
+    "metric": "Region delay rates span a range of 1.45 percentage points (25.8% – 27.25%).",
+    "groups_compared": [
+      {
+        "region": "east",
+        "delay_rate_pct": 25.8
+      },
+      {
+        "region": "north",
+        "delay_rate_pct": 26.57
+      },
+      {
+        "region": "south",
+        "delay_rate_pct": 26.78
+      },
+      {
+        "region": "west",
+        "delay_rate_pct": 26.95
+      },
+      {
+        "region": "central",
+        "delay_rate_pct": 27.25
+      }
+    ],
+    "interpretation": "Delay rates differ across regions by up to 1.45 pp in this dataset.  Regional differences may reflect varying mixes of partners, weather conditions, or delivery modes rather than geography alone.",
+    "caution": "Descriptive observation; confounding not controlled."
+  }
+}

@@ -1,0 +1,6 @@
+distance_group,delivery_count,delay_rate_pct,avg_delivery_time,avg_delivery_cost
+0–60 km,4920,17.36,3.42,264.36
+61–120 km,5044,19.85,4.74,560.62
+121–180 km,5053,26.04,6.29,866.35
+181–240 km,4960,31.75,7.69,1162.78
+241–300 km,5023,38.28,9.25,1463.31

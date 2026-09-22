@@ -1,0 +1,6 @@
+region,total_deliveries,delayed_deliveries,delay_rate_pct,avg_rating
+east,4919,1269,25.8,3.68
+north,4949,1315,26.57,3.68
+south,4977,1333,26.78,3.67
+west,5095,1373,26.95,3.64
+central,5060,1379,27.25,3.66

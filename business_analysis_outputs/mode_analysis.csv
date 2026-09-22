@@ -1,0 +1,5 @@
+delivery_mode,total_deliveries,delayed_deliveries,delay_rate_pct,avg_delivery_time,avg_expected_time
+express,6233,4599,73.78,6.28,4.52
+same day,6279,2043,32.54,6.33,8.0
+standard,6186,0,0.0,6.3,24.0
+two day,6302,27,0.43,6.34,16.0

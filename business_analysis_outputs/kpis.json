@@ -1,0 +1,8 @@
+{
+  "total_deliveries": 25000,
+  "delay_rate_pct": 26.68,
+  "avg_actual_delivery_hrs": 6.31,
+  "avg_expected_sla_hrs": 13.11,
+  "avg_delivery_cost_inr": 864.94,
+  "avg_delivery_rating": 3.67
+}

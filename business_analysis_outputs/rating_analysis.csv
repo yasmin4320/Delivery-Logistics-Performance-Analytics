@@ -1,0 +1,6 @@
+delivery_rating,delivery_count,avg_delivery_time,avg_delivery_cost,delay_rate_pct
+1,920,8.13,993.76,100.0
+2,3602,8.11,1023.27,100.0
+3,5773,6.53,886.64,37.19
+4,7318,5.64,807.18,0.0
+5,7387,5.69,811.97,0.0

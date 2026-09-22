@@ -1,0 +1,7 @@
+weather_condition,total_deliveries,delayed_deliveries,delay_rate_pct,avg_delivery_time
+clear,4124,719,17.43,4.89
+cold,4158,666,16.02,4.87
+foggy,4219,1279,30.32,6.49
+hot,4130,707,17.12,4.87
+rainy,4171,1558,37.35,7.8
+stormy,4198,1740,41.45,8.81
