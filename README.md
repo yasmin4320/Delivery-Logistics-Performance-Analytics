@@ -35,7 +35,7 @@ The dataset contains **25,000 delivery records** spanning 9 delivery partners, 4
 |---|---|
 | Rows | 25,000 |
 | Columns | 15 |
-| Source | Synthetic dataset |
+| Source | Synthetic dataset — [Delivery_Logistics.csv](Delivery_Logistics.csv)
 
 ### Columns
 
@@ -206,7 +206,7 @@ All charts are saved to `business_analysis_outputs/`.
 
 ```
 .
-├── final_project.py                   # Complete analysis workflow (single runnable script)
+├── SafwanaYasmin_DeliveryLogisticsPerformanceAnalytics.py            # Complete analysis workflow (single runnable script)
 ├── requirements.txt                   # Required Python packages
 ├── Delivery_Logistics.csv             # Original raw dataset (never modified)
 ├── Delivery_Logistics_cleaned.csv     # Cleaned working dataset (25,000 rows × 21 cols)
