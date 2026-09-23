@@ -252,7 +252,7 @@ pip install -r requirements.txt
 ### Run the full analysis
 
 ```bash
-python final_project.py
+python SafwanaYasmin_DeliveryLogisticsPerformanceAnalytics.py
 ```
 
 The script will:
